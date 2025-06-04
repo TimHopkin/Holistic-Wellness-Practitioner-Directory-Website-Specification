@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Practitioners - Holistic Wellness Directory</title>
+    <meta name="description" content="Search and filter through our curated directory of verified holistic wellness practitioners.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/directory.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1><a href="index.html">Wellness Directory</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Find Practitioners</a></li>
+                <li><a href="directory.html#categories">Categories</a></li>
+                <li><a href="apply.html">Join as Practitioner</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Directory Header -->
+    <section class="directory-header">
+        <div class="container">
+            <h1>Find Your Perfect Practitioner</h1>
+            <p>Discover trusted holistic wellness practitioners who align with your journey</p>
+        </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section class="search-filters">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by name, modality, or location...">
+                <button type="button" id="searchButton" class="search-btn">Search</button>
+            </div>
+            
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="modalityFilter">Modality</label>
+                    <select id="modalityFilter">
+                        <option value="">All Modalities</option>
+                        <option value="life-coaching">Life Coaching</option>
+                        <option value="somatic-therapy">Somatic Therapy</option>
+                        <option value="energy-healing">Energy Healing</option>
+                        <option value="reiki">Reiki</option>
+                        <option value="acupuncture">Acupuncture</option>
+                        <option value="mindfulness">Mindfulness</option>
+                        <option value="crystal-healing">Crystal Healing</option>
+                        <option value="breathwork">Breathwork</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sessionTypeFilter">Session Type</label>
+                    <select id="sessionTypeFilter">
+                        <option value="">All Types</option>
+                        <option value="in-person">In-Person</option>
+                        <option value="virtual">Virtual</option>
+                        <option value="hybrid">Hybrid</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="priceRangeFilter">Price Range</label>
+                    <select id="priceRangeFilter">
+                        <option value="">All Prices</option>
+                        <option value="50-100">$50 - $100</option>
+                        <option value="100-150">$100 - $150</option>
+                        <option value="150-200">$150 - $200</option>
+                        <option value="200+">$200+</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sortBy">Sort By</label>
+                    <select id="sortBy">
+                        <option value="featured">Featured</option>
+                        <option value="newest">Newest</option>
+                        <option value="popular">Most Popular</option>
+                        <option value="name">Name A-Z</option>
+                    </select>
+                </div>
+                
+                <button type="button" id="clearFilters" class="clear-filters">Clear All</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <h2>Browse by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🧘‍♀️</div>
+                    <h3>Mind & Meditation</h3>
+                    <p>Mindfulness, meditation, and mental wellness practices</p>
+                    <span class="practitioner-count">12 practitioners</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💫</div>
+                    <h3>Energy Healing</h3>
+                    <p>Reiki, crystal healing, and energy work</p>
+                    <span class="practitioner-count">8 practitioners</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🌸</div>
+                    <h3>Somatic Therapy</h3>
+                    <p>Body-based healing and trauma recovery</p>
+                    <span class="practitioner-count">6 practitioners</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🌱</div>
+                    <h3>Life Coaching</h3>
+                    <p>Personal development and goal achievement</p>
+                    <span class="practitioner-count">10 practitioners</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🌿</div>
+                    <h3>Traditional Healing</h3>
+                    <p>Acupuncture, herbalism, and ancient practices</p>
+                    <span class="practitioner-count">5 practitioners</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💨</div>
+                    <h3>Breathwork</h3>
+                    <p>Breath-based healing and consciousness work</p>
+                    <span class="practitioner-count">7 practitioners</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <div class="results-header">
+                <div class="results-count">
+                    <span id="resultsCount">12 practitioners found</span>
+                </div>
+                <div class="view-toggle">
+                    <button id="gridView" class="view-btn active">Grid</button>
+                    <button id="listView" class="view-btn">List</button>
+                </div>
+            </div>
+            
+            <div id="practitionersGrid" class="practitioners-results grid-view">
+                <!-- Practitioners will be populated by JavaScript -->
+            </div>
+            
+            <div class="load-more">
+                <button id="loadMoreBtn" class="cta-button secondary">Load More Practitioners</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wellness Directory</h3>
+                    <p>Connecting you with trusted holistic wellness practitioners</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="directory.html">Find Practitioners</a></li>
+                        <li><a href="apply.html">Join as Practitioner</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Holistic Wellness Practitioner Directory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/directory.js"></script>
+</body>
+</html>

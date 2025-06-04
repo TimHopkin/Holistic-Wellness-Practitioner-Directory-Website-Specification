@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join as Practitioner - Holistic Wellness Directory</title>
+    <meta name="description" content="Apply to join our curated directory of holistic wellness practitioners. Share your expertise with women seeking trusted wellness support.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/apply.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1><a href="index.html">Wellness Directory</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Find Practitioners</a></li>
+                <li><a href="directory.html#categories">Categories</a></li>
+                <li><a href="apply.html" class="active">Join as Practitioner</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Application Header -->
+    <section class="apply-header">
+        <div class="container">
+            <h1>Join Our Curated Directory</h1>
+            <p>Share your healing gifts with women seeking trusted wellness support</p>
+            <div class="benefits-preview">
+                <div class="benefit-item">
+                    <span class="benefit-icon">✨</span>
+                    <span>Curated Community</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">🌱</span>
+                    <span>Ideal Clients</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">💫</span>
+                    <span>Professional Growth</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process -->
+    <section class="application-process">
+        <div class="container">
+            <h2>Application Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Submit Application</h3>
+                    <p>Complete our comprehensive application form with your credentials and experience</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Review Process</h3>
+                    <p>Our team carefully reviews your qualifications and alignment with our values</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Interview</h3>
+                    <p>Selected candidates participate in a brief interview to ensure mutual fit</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Welcome</h3>
+                    <p>Upon approval, we'll help you create your profile and connect with clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-form">
+        <div class="container">
+            <div class="form-container">
+                <form id="practitionerApplication" class="apply-form">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State/Province *</label>
+                                <input type="text" id="state" name="state" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional Information -->
+                    <div class="form-section">
+                        <h3>Professional Information</h3>
+                        <div class="form-group">
+                            <label for="yearsExperience">Years of Experience *</label>
+                            <select id="yearsExperience" name="yearsExperience" required>
+                                <option value="">Select experience level</option>
+                                <option value="1-2">1-2 years</option>
+                                <option value="3-5">3-5 years</option>
+                                <option value="6-10">6-10 years</option>
+                                <option value="10+">10+ years</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="modalities">Primary Modalities *</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="modalities" value="life-coaching">
+                                    <span class="checkmark"></span>
+                                    Life Coaching
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="modalities" value="somatic-therapy">
+                                    <span class="checkmark"></span>
+                                    Somatic Therapy
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="modalities" value="energy-healing">
+                                    <span class="checkmark"></span>
+                                    Energy Healing
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="modalities" value="reiki">
+                                    <span class="checkmark"></span>
+                                    Reiki
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="modalities" value="acupuncture">
+                                    <span class="checkmark"></span>
+                                    Acupuncture
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="modalities" value="mindfulness">
+                                    <span class="checkmark"></span>
+                                    Mindfulness
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="modalities" value="crystal-healing">
+                                    <span class="checkmark"></span>
+                                    Crystal Healing
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="modalities" value="breathwork">
+                                    <span class="checkmark"></span>
+                                    Breathwork
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="credentials">Credentials & Certifications *</label>
+                            <textarea id="credentials" name="credentials" rows="4" placeholder="List your relevant certifications, licenses, and training..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sessionTypes">Session Types Offered *</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="sessionTypes" value="in-person">
+                                    <span class="checkmark"></span>
+                                    In-Person
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="sessionTypes" value="virtual">
+                                    <span class="checkmark"></span>
+                                    Virtual
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="sessionTypes" value="hybrid">
+                                    <span class="checkmark"></span>
+                                    Hybrid
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="priceRange">Session Price Range *</label>
+                                <select id="priceRange" name="priceRange" required>
+                                    <option value="">Select price range</option>
+                                    <option value="50-100">$50 - $100</option>
+                                    <option value="100-150">$100 - $150</option>
+                                    <option value="150-200">$150 - $200</option>
+                                    <option value="200+">$200+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="website">Website</label>
+                                <input type="url" id="website" name="website" placeholder="https://yourwebsite.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile Information -->
+                    <div class="form-section">
+                        <h3>Profile Information</h3>
+                        <div class="form-group">
+                            <label for="bio">Professional Bio *</label>
+                            <textarea id="bio" name="bio" rows="6" placeholder="Share your story, approach, and what makes your practice unique... (500-1000 characters)" required maxlength="1000"></textarea>
+                            <div class="char-count">
+                                <span id="bioCharCount">0</span>/1000 characters
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="philosophy">Your Philosophy/Approach *</label>
+                            <textarea id="philosophy" name="philosophy" rows="4" placeholder="Describe your healing philosophy and approach to working with clients... (250-500 characters)" required maxlength="500"></textarea>
+                            <div class="char-count">
+                                <span id="philosophyCharCount">0</span>/500 characters
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="headshot">Professional Headshot *</label>
+                            <div class="file-upload">
+                                <input type="file" id="headshot" name="headshot" accept="image/jpeg,image/png,image/jpg" required>
+                                <label for="headshot" class="file-upload-label">
+                                    <span class="upload-text">Choose file or drag here</span>
+                                    <span class="upload-requirements">JPEG or PNG, max 2MB</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Values & Community Fit -->
+                    <div class="form-section">
+                        <h3>Values & Community Fit</h3>
+                        <div class="form-group">
+                            <label for="idealClient">Who is your ideal client? *</label>
+                            <textarea id="idealClient" name="idealClient" rows="4" placeholder="Describe the type of clients you work best with and enjoy supporting..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="whyJoin">Why do you want to join our directory? *</label>
+                            <textarea id="whyJoin" name="whyJoin" rows="4" placeholder="Share what draws you to our community and how you align with our values..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialties">Areas of Specialty</label>
+                            <input type="text" id="specialties" name="specialties" placeholder="e.g., trauma recovery, anxiety, women's wellness (separate with commas)">
+                        </div>
+                    </div>
+
+                    <!-- Social Media & Contact -->
+                    <div class="form-section">
+                        <h3>Connect With You</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="instagram">Instagram Handle</label>
+                                <input type="text" id="instagram" name="instagram" placeholder="@yourusername">
+                            </div>
+                            <div class="form-group">
+                                <label for="linkedin">LinkedIn Profile</label>
+                                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Agreement -->
+                    <div class="form-section">
+                        <div class="agreement-section">
+                            <label class="checkbox-label agreement-label">
+                                <input type="checkbox" name="agreement" id="agreement" required>
+                                <span class="checkmark"></span>
+                                <span class="agreement-text">I understand that all practitioners are subject to a verification process and that acceptance into the directory is at the discretion of the Wellness Directory team. I agree to the terms of service and privacy policy.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="form-submit">
+                        <button type="submit" class="cta-button primary submit-btn">Submit Application</button>
+                        <p class="submit-note">We'll review your application within 5-7 business days and reach out with next steps.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What are the requirements to join?</h4>
+                    <p>We look for practitioners with relevant certifications, professional experience, and alignment with our values of trust, empowerment, and community.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is there a membership fee?</h4>
+                    <p>Yes, there is a monthly membership fee that helps us maintain the quality and curation of our directory. Pricing details will be shared during the application process.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long does the review process take?</h4>
+                    <p>We typically review applications within 5-7 business days. Selected candidates will be contacted for a brief interview before final approval.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I update my profile after joining?</h4>
+                    <p>Absolutely! Once approved, you'll have access to a member dashboard where you can update your profile, bio, availability, and contact information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wellness Directory</h3>
+                    <p>Connecting you with trusted holistic wellness practitioners</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="directory.html">Find Practitioners</a></li>
+                        <li><a href="apply.html">Join as Practitioner</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Holistic Wellness Practitioner Directory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/apply.js"></script>
+</body>
+</html>

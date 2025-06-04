@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practitioner Profile - Holistic Wellness Directory</title>
+    <meta name="description" content="View detailed practitioner profile including credentials, modalities, and booking information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1><a href="index.html">Wellness Directory</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Find Practitioners</a></li>
+                <li><a href="directory.html#categories">Categories</a></li>
+                <li><a href="apply.html">Join as Practitioner</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Header -->
+    <section class="profile-header">
+        <div class="container">
+            <div class="back-link">
+                <a href="directory.html">← Back to Directory</a>
+            </div>
+            <div class="profile-hero">
+                <div class="profile-image">
+                    <div class="image-placeholder">
+                        <span>Professional Photo</span>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h1 id="practitionerName">Sarah Chen</h1>
+                    <div class="modalities" id="practitionerModalities">
+                        <span class="modality-tag">Somatic Therapy</span>
+                        <span class="modality-tag">Energy Healing</span>
+                        <span class="modality-tag">Breathwork</span>
+                    </div>
+                    <div class="location-session">
+                        <span class="location">📍 San Francisco, CA</span>
+                        <span class="session-types">💻 Virtual • 🏠 In-Person</span>
+                    </div>
+                    <div class="profile-actions">
+                        <button class="cta-button primary" id="bookCallBtn">Book a Call</button>
+                        <button class="cta-button secondary" id="inquireBtn">Send Inquiry</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- About Section -->
+                    <div class="content-section">
+                        <h2>About</h2>
+                        <div class="bio-content" id="practitionerBio">
+                            <p>Sarah is a compassionate somatic therapist with over 8 years of experience helping women reconnect with their bodies and heal from trauma. Her integrative approach combines somatic experiencing, energy healing, and breathwork to support deep transformation.</p>
+                            <p>She believes that the body holds infinite wisdom and that through gentle, trauma-informed practices, we can access our innate capacity for healing. Sarah creates a safe, nurturing space where clients can explore their inner landscape and discover new pathways to wellness.</p>
+                        </div>
+                    </div>
+
+                    <!-- Philosophy Section -->
+                    <div class="content-section">
+                        <h2>My Approach</h2>
+                        <div class="philosophy-content">
+                            <blockquote>
+                                "I believe that healing happens in relationship - with ourselves, our bodies, and the world around us. My role is to witness and support your journey back to wholeness."
+                            </blockquote>
+                            <p>My practice is grounded in the understanding that trauma lives in the body, and therefore healing must also happen at the somatic level. I use gentle, body-based techniques to help you develop a new relationship with your nervous system and cultivate resilience.</p>
+                        </div>
+                    </div>
+
+                    <!-- Session Details -->
+                    <div class="content-section">
+                        <h2>Session Information</h2>
+                        <div class="session-details">
+                            <div class="detail-item">
+                                <h4>Session Length</h4>
+                                <p>60-90 minutes</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Session Format</h4>
+                                <p>Individual sessions, both virtual and in-person available</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Investment</h4>
+                                <p>$120 - $150 per session</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Availability</h4>
+                                <p>Tuesday - Friday, 10am - 6pm PST</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonials -->
+                    <div class="content-section">
+                        <h2>Client Testimonials</h2>
+                        <div class="testimonials-list">
+                            <div class="testimonial-item">
+                                <blockquote>"Sarah's gentle guidance helped me reconnect with my body after years of disconnection. Her space feels so safe and nurturing."</blockquote>
+                                <cite>- Emma K.</cite>
+                            </div>
+                            <div class="testimonial-item">
+                                <blockquote>"Working with Sarah has been transformational. She has such a gift for holding space and helping you feel what you need to feel."</blockquote>
+                                <cite>- Maria L.</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Credentials -->
+                    <div class="sidebar-section">
+                        <h3>Credentials & Training</h3>
+                        <ul class="credentials-list">
+                            <li>Licensed Clinical Social Worker (LCSW)</li>
+                            <li>Somatic Experiencing Practitioner (SEP)</li>
+                            <li>Certified Breathwork Facilitator</li>
+                            <li>Reiki Master Teacher</li>
+                            <li>Trauma-Sensitive Yoga Teacher (TSY)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Specialties -->
+                    <div class="sidebar-section">
+                        <h3>Specialties</h3>
+                        <div class="specialties-tags">
+                            <span class="specialty-tag">Trauma Recovery</span>
+                            <span class="specialty-tag">Anxiety</span>
+                            <span class="specialty-tag">Body Image</span>
+                            <span class="specialty-tag">Nervous System Regulation</span>
+                            <span class="specialty-tag">Women's Wellness</span>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="sidebar-section">
+                        <h3>Connect</h3>
+                        <div class="contact-links">
+                            <a href="#" class="contact-link">🌐 Website</a>
+                            <a href="#" class="contact-link">📧 Email</a>
+                            <a href="#" class="contact-link">📱 Instagram</a>
+                        </div>
+                    </div>
+
+                    <!-- Book Session -->
+                    <div class="sidebar-section booking-section">
+                        <h3>Ready to Begin?</h3>
+                        <p>Take the first step on your healing journey</p>
+                        <button class="cta-button primary full-width">Schedule Consultation</button>
+                        <p class="booking-note">Free 15-minute consultation available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Practitioners -->
+    <section class="related-practitioners">
+        <div class="container">
+            <h2>You Might Also Like</h2>
+            <div class="related-grid">
+                <div class="practitioner-card">
+                    <div class="practitioner-image">
+                        <div class="image-placeholder">Photo</div>
+                    </div>
+                    <h3>Maria Rodriguez</h3>
+                    <p class="modality">Life Coaching & Mindfulness</p>
+                    <p class="location">Austin, TX & Online</p>
+                    <a href="practitioner-profile.html?id=2" class="view-profile">View Profile</a>
+                </div>
+                <div class="practitioner-card">
+                    <div class="practitioner-image">
+                        <div class="image-placeholder">Photo</div>
+                    </div>
+                    <h3>Luna Thompson</h3>
+                    <p class="modality">Reiki & Crystal Healing</p>
+                    <p class="location">Portland, OR & Online</p>
+                    <a href="practitioner-profile.html?id=3" class="view-profile">View Profile</a>
+                </div>
+                <div class="practitioner-card">
+                    <div class="practitioner-image">
+                        <div class="image-placeholder">Photo</div>
+                    </div>
+                    <h3>Aisha Patel</h3>
+                    <p class="modality">Acupuncture & Herbalism</p>
+                    <p class="location">Seattle, WA & Online</p>
+                    <a href="practitioner-profile.html?id=4" class="view-profile">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wellness Directory</h3>
+                    <p>Connecting you with trusted holistic wellness practitioners</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="directory.html">Find Practitioners</a></li>
+                        <li><a href="apply.html">Join as Practitioner</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Holistic Wellness Practitioner Directory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

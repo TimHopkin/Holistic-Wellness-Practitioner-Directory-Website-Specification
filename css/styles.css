@@ -144,6 +144,15 @@ a:hover {
     margin: 0;
 }
 
+.nav-logo a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-logo a:hover {
+    color: var(--accent-color);
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -156,7 +165,8 @@ a:hover {
     transition: color 0.3s ease;
 }
 
-.nav-menu a:hover {
+.nav-menu a:hover,
+.nav-menu a.active {
     color: var(--primary-color);
 }
 
@@ -372,6 +382,86 @@ a:hover {
     font-style: normal;
 }
 
+/* Contact Section */
+.contact-section {
+    padding: var(--spacing-xl) 0;
+    background: white;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info h3 {
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.5rem;
+}
+
+.contact-info p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.6;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    background: var(--background-warm);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+}
+
+.contact-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.875rem;
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    transition: border-color 0.3s ease;
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
 /* Newsletter */
 .newsletter {
     padding: var(--spacing-xl) 0;
@@ -505,6 +595,15 @@ a:hover {
     
     .newsletter-form {
         flex-direction: column;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .contact-form .form-row {
+        grid-template-columns: 1fr;
     }
     
     .container {
